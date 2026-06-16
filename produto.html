@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Apresentação do Produto</title>
+  <style>
+    img{border-radius:1rem;}
+    :root{--bg:#f7f8fb;--card:#fff;--accent:#4a90e2;--muted:#6b7280}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
+    .wrap{max-width:980px;margin:24px auto;padding:16px}
+    header{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:18px;text-align:center}
+    header img{height:6rem;}
+    h1{margin:0;font-size:18px}
+    p.lead{color:var(--muted);margin:6px 0 18px;font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .card img{width:100%;border-radius:8px;object-fit:contain;height:200px}
+    .gallery{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+    .gallery img{height:180px;object-fit:contain}
+    .card h3{margin:12px 0 6px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .cta{display:flex;gap:12px;align-items:center;margin-top:16px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:13px;margin:0 auto;}
+    .video-block{display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;}
+    .video-block iframe{width:100%;height:25rem;border-radius:1rem;}
+    .video-block .mobile-link{display:none;}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:12px}
+    @media(max-width:599px){
+      .video-block iframe{display:none;}
+      .video-block .mobile-link{display:inline-flex;}
+    }
+    @media(min-width:600px){
+      header{flex-direction:row;text-align:left}
+      header img{height:8rem}
+      h1{font-size:20px}
+      .card img{height:280px}
+      .gallery img{height:200px}
+      .video-block .mobile-link{display:none;}
+    }
+    @media(min-width:900px){
+      .wrap{padding:24px}
+      header img{height:10rem}
+      h1{font-size:22px}
+      .card img{height:320px}
+      .gallery img{height:220px}
+      .hide{display:none;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="quix/logo.png" alt="logo">
+      <div>
+        <h1>Produto: Sistema de Pedidos na Mesa</h1>
+        <p class="lead">Solução para restaurantes e estabelecimentos — gestão, operação e pedido pelo cliente.</p>
+      </div>
+    </header>
+
+    <aside class="video-block" style="text-align:center;display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
+      <h1>Exemplo de uso do QUIX:</h1>
+      <iframe src="https://www.youtube.com/embed/P9sMJhL8lyw?si=AwuVnOygzVLnXULF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a class="btn mobile-link" href="https://youtu.be/P9sMJhL8lyw?is=XRER_AZvJzXQr2Y8" target="_blank" rel="noopener noreferrer">Abrir vídeo no YouTube</a>
+    </aside>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Gestor</h3>
+        <p>O gestor tem acesso a todas as informações do sistema e pode alterar qualquer dado. Ele toma decisões importantes e alimenta o sistema com informações para operadores e clientes. Ele tem à disposição os relatórios de vendas, produtos, estoque, pedidos e entre outros medidores.</p><br>
+        <img src="quix/gestor.png" alt="Gestor">
+        <img src="quix/gestor2.png" alt="Gestor 2">
+      </article>
+
+      <article class="card">
+        <h3>Balcão (Operador)</h3>
+        <p>A pessoa do balcão opera o fluxo: tem total acesso aos pedidos, pode criar novos, editar pedidos feitos por clientes e finalizar vendas. Seu objetivo é organizar e fazer a ponte entre produção e clientes. Para isso há uma tela especial onde tudo isso pode ser feito sem enrolação.</p><br>
+        <img src="quix/balcao.png" alt="Balcão">
+        <img src="quix/balcao2.png" alt="Balcão 2">
+
+      </article>
+
+      <article class="card">
+        <h3>Cliente</h3>
+        <p>O cliente acessa o catálogo do estabelecimento via QR Code e faz pedidos direto na mesa, sem precisar chamar um atendente. Mais autonomia e agilidade.</p><br>
+        <img src="quix/cliente.png" alt="Cliente">
+      </article>
+    </section>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>Benefícios</h3>
+      <ul style="margin:8px 0 0 18px;color:var(--muted)">
+        <li>Fluxo claro entre gestor, operador e cliente</li>
+        <li>Redução de erros no atendimento</li>
+        <li>Mais rapidez no fechamento de pedidos</li>
+      </ul>
+        <div class="cta">
+          <a class="btn" href="./index.html">Retornar para a página principal</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

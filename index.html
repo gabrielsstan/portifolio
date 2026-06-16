@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <title>Gabriel Santana</title>
+</head>
+<body>
+    <header>
+            <p class="title">Gabriel Santana <strong class="contrast">|</strong> Profissional de TI</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="landing">
+        <div class="presentation">
+        <h1>Conheça meu maior projeto, o <span class="contrast">QUIX PDV</span></h1>
+        <p>Após muito trabalho e pesquisa, desenvolvi o QUIX PDV, um sistema independente de ponto de venda e autoatendimento local, que permite aos clientes realizarem seus próprios pedidos e atendimentos no estabelecimento, sem a necessidade de um atendente.</p>
+        <p>Olá! Meu nome é Gabriel Santana e sou um profissional de TI apaixonado por tecnologia e inovação. Aqui você encontrará informações sobre minha experiência, meus projetos e as formas de entrar em contato comigo.</p>
+        <a class="action-button" href="#projects">Quero saber mais sobre o QUIX PDV</a>
+        </div>
+        <div class="presentation-image">
+            <img src="./assets/quix.png" alt="Foto do sistema QUIX PDV">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-image">
+            <img src="./assets/profile.jpg" alt="Foto de Gabriel Santana">
+        </div>
+        <div class="presentation">
+        <h2>Sobre Gabriel Santana</h2>
+        <p>Olá! Sou Gabriel Santana, profissional de TI com experiência em desenvolvimento web, suporte técnico e consultoria tecnológica.
+        <br><br>
+        Gosto de transformar ideias em soluções práticas, criando sistemas e ferramentas que resolvem problemas reais e proporcionam uma melhor experiência para usuários e empresas.
+        <br><br>
+        Sou entusiasta do software livre e defensor de tecnologias de código aberto, como Linux, por acreditar que a colaboração e o compartilhamento de conhecimento impulsionam a inovação.
+        <br><br>
+        Estou sempre aprendendo, explorando novas tecnologias e buscando oportunidades para evoluir profissionalmente e contribuir com projetos relevantes.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <!-- <h2>Meus Projetos</h2> -->
+        <p class="section-subtitle">Deslize para o lado para visualizar os projetos.</p>
+        <div class="projects-carousel" aria-label="Carrossel de projetos">
+            <article class="project-card" id="project-quix">
+                <img src="./assets/quix.png" alt="Projeto QUIX PDV">
+                <div class="project-card-content">
+                    <span class="project-tag">Destaque</span>
+                    <h3>QUIX PDV</h3>
+                    <p>Ao chegar em um estabelecimento com QUIX PDV, o cliente pode realizar seus próprios pedidos sem a necessidade de um atendente. Chegou, escaneou o QR Code e fez seu pedido!</p>
+                    <a href="./produto.html" target="_blank" rel="noopener noreferrer" class="action-button">Ver resumo do QUIX</a>
+                </div>
+            </article>
+            <article class="project-card" id="project-jtech">
+                <img src="./assets/jornaltech.png" alt="Projeto Jornal Tech">
+                <div class="project-card-content">
+                    <span class="project-tag">Projeto Paralelo</span>
+                    <h3>Jornal Tech</h3>
+                    <p>Um catálogo de produtos tecnológicos com ótimos preços e informações detalhadas sem a necessidade de grupos de redes sociais. Pensado especialmente para uso mobile e para vendas em links de afiliado.</p>
+                    <a href="https://mestredossmartphones.netlify.app" target="_blank" rel="noopener noreferrer" class="action-button">Acessar JornalTECH</a>
+                </div>
+            </article>
+            <article class="project-card project-card-placeholder" id="project-more">
+                <img src="./assets/atacadao.png" alt="Projeto Jornal Tech">
+                <div class="project-card-content">
+                    <span class="project-tag">Contribuições</span>
+                    <h3>Projetos para minha atual empresa</h3>
+                    <p>Dentro do Atacadão criei páginas de acesso que servem como um hub de informações para os colaboradores. Foi criado um específico para a equipe de TI e outro para a equipe da loja.</p>
+                    <a href="https://youtu.be/fUGlIDMeh6E?is=YvyQ6DToK4QiWeJw" target="_blank" rel="noopener noreferrer" class="action-button">Acessar Vídeo demonstrativo</a>
+                </div>
+            </article>
+        </div>
+        <div class="carousel-nav">
+            <a href="#project-quix">1</a>
+            <a href="#project-jtech">2</a>
+            <a href="#project-more">3</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p>Se você deseja entrar em contato comigo para discutir oportunidades de trabalho, parcerias ou apenas para conversar sobre tecnologia, sinta-se à vontade para me enviar uma mensagem. Estou sempre aberto a novas conexões e colaborações.</p>
+        <div class="social">
+            <a class="social-btn" href="./curriculo.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/linkedin.png" alt="Currículo">Currículo
+            </a>
+            <a class="social-btn" href="https://wa.me/5522997483251" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/whatsapp.png" alt="Ícone do WhatsApp">Whatsapp
+            </a>
+            <a class="social-btn" href="mailto:gabrielstancf@gmail.com">
+                <img src="./assets/email.png" alt="Ícone de email">Email
+            </a>
+        </div>
+    </section>
+    <script>
+        (function(){
+            const carousel = document.querySelector('.projects-carousel');
+            if(!carousel) return;
+
+            document.addEventListener('click', (e) => {
+                const anchor = e.target.closest('a[href^="#project-"]');
+                if(!anchor) return;
+                e.preventDefault();
+                const id = anchor.getAttribute('href').slice(1);
+                const target = document.getElementById(id);
+                if(!target) return;
+
+                const carouselRect = carousel.getBoundingClientRect();
+                const targetRect = target.getBoundingClientRect();
+                const left = carousel.scrollLeft + (targetRect.left - carouselRect.left);
+                carousel.scrollTo({ left, behavior: 'smooth' });
+
+                // atualiza a hash sem provocar jump
+                if (history.replaceState) {
+                    history.replaceState(null, '', '#' + id);
+                }
+            }, false);
+        })();
+    </script>
+</body>
+</html>
