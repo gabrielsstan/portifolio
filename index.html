@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <title>Gabriel Santana | Portfólio</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <button class="profile-trigger" type="button" aria-label="Abrir perfil de Gabriel Santana" aria-controls="profile-modal">
+                <img class="profileIcon" src="./assets/profileicon.gif" alt="">
+            </button>
+            <a class="brand-copy" href="#top" aria-label="Voltar ao início"><strong>GABRIEL</strong><small>/ TI</small></a>
+        </div>
+        <nav aria-label="Navegação principal"><ul><li><a class="active" href="#landing">Início</a></li><li><a href="#about">Sobre</a></li><li><a href="#projects">Projetos</a></li><li><a href="#contact">Contato</a></li></ul></nav>
+        <span class="header-status"><i></i> disponível para projetos</span>
+    </header>
+    <dialog class="profile-modal" id="profile-modal" aria-labelledby="profile-name">
+        <article class="profile-card">
+            <button class="profile-close" type="button" aria-label="Fechar perfil">×</button>
+            <img class="profile-card-image" src="./assets/profileicon.gif" alt="Foto de Gabriel S. M. Santana">
+            <div class="profile-card-content">
+                <p class="profile-card-label">PLAYER PROFILE</p>
+                <h2 id="profile-name">Gabriel S. M. Santana</h2>
+                <p class="profile-location">São Pedro da Aldeia - RJ</p>
+            </div>
+        </article>
+    </dialog>
+    <main id="top">
+    <section id="landing" class="hero">
+        <div class="hero-copy"><p class="eyebrow"><span>01</span> Portfólio / construção em andamento</p><h1>Ideias que viram <span class="contrast">sistemas</span> para jogar o jogo real.</h1><p class="hero-lead">Sou Gabriel Santana, profissional de TI focado em criar produtos digitais objetivos, experiências simples e soluções que fazem a operação avançar.</p><div class="hero-actions"><a class="action-button" href="#projects">Explorar projetos <span>↗</span></a><a class="text-link" href="#about">Conhecer minha história <span>↓</span></a></div><div class="hero-metrics"><div><strong>03</strong><span>projetos<br>em destaque</span></div><div><strong>∞</strong><span>curiosidade<br>por tecnologia</span></div><div><strong>24/7</strong><span>modo<br>aprendizado</span></div></div></div>
+        <div class="hero-visual"><div class="scanline"></div><div class="visual-label">CASE_001 <span>ONLINE</span></div><img src="./assets/quix.png" alt="Interface do sistema QUIX PDV"><div class="visual-caption"><span>QUIX PDV</span><small>sistema de pedidos / 2024</small></div><div class="crosshair crosshair-one"></div><div class="crosshair crosshair-two"></div></div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-heading"><p class="eyebrow"><span>02</span> Player profile</p><h2>Perfil de quem gosta de <span class="contrast">resolver</span>.</h2></div>
+        <div class="about-grid"><div class="about-image-wrap"><img src="./assets/profile.jpg" alt="Foto de Gabriel Santana"><span class="image-note">GABRIEL.SANTANA // RJ</span></div><div class="about-copy"><p>Sou um profissional de TI com experiência em desenvolvimento web, suporte técnico e consultoria tecnológica. Gosto de transformar ideias em soluções práticas, criando sistemas e ferramentas que resolvem problemas reais.</p><p>Sou entusiasta do software livre e defensor de tecnologias de código aberto. Estou sempre aprendendo, explorando novas ferramentas e procurando contribuir com projetos relevantes.</p><div class="skill-list"><span>Desenvolvimento web</span><span>Suporte técnico</span><span>Linux &amp; open source</span><span>Produto digital</span></div></div></div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="section-heading projects-heading"><div><p class="eyebrow"><span>03</span> Mission select</p><h2>Projetos que saíram do <span class="contrast">rascunho</span>.</h2></div><p class="section-subtitle">Arraste para explorar os projetos.</p></div>
+        <div class="projects-carousel" aria-label="Carrossel de projetos">
+            <article class="project-card" id="project-quix">
+                <div class="project-image"><img src="./assets/quix.png" alt="Projeto QUIX PDV"><span class="project-index">01 / 03</span></div>
+                <div class="project-card-content"><span class="project-tag">Destaque</span><h3>QUIX <em>PDV</em></h3><p>Um sistema independente de ponto de venda e autoatendimento local. O cliente escaneia um QR Code, faz seu pedido e a operação ganha um fluxo mais rápido.</p><a href="./produto.html" class="card-link">Ver case completo <span>↗</span></a>
+                </div>
+            </article>
+            <article class="project-card" id="project-jtech">
+                <div class="project-image"><img src="./assets/jornaltech.png" alt="Projeto Jornal Tech"><span class="project-index">02 / 03</span></div>
+                <div class="project-card-content"><span class="project-tag">Projeto paralelo</span><h3>Jornal <em>Tech</em></h3><p>Catálogo mobile de produtos tecnológicos com informações detalhadas, pensado para facilitar a descoberta e a venda através de links de afiliado.</p><a href="https://mestredossmartphones.netlify.app" target="_blank" rel="noopener noreferrer" class="card-link">Acessar projeto <span>↗</span></a>
+                </div>
+            </article>
+            <article class="project-card project-card-placeholder" id="project-more">
+                <div class="project-image"><img src="./assets/atacadao.png" alt="Hub de informações do Atacadão"><span class="project-index">03 / 03</span></div>
+                <div class="project-card-content"><span class="project-tag">Contribuições</span><h3>Hubs de <em>acesso</em></h3><p>Páginas internas criadas para organizar informações e facilitar o acesso das equipes de TI e loja dentro do Atacadão.</p><a href="https://youtu.be/fUGlIDMeh6E?is=YvyQ6DToK4QiWeJw" target="_blank" rel="noopener noreferrer" class="card-link">Ver demonstração <span>↗</span></a>
+                </div>
+            </article>
+        </div>
+        <div class="carousel-nav">
+            <a href="#project-quix" aria-label="Projeto 1">01</a>
+            <a href="#project-jtech" aria-label="Projeto 2">02</a>
+            <a href="#project-more" aria-label="Projeto 3">03</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div><p class="eyebrow"><span>04</span> Open channel</p><h2>Vamos criar o próximo <span class="contrast">nível</span>?</h2><p>Aberto a oportunidades, parcerias e boas conversas sobre tecnologia.</p></div>
+        <div class="social">
+            <a class="social-btn" href="./curriculo.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/linkedin.png" alt="">Currículo <span>↗</span>
+            </a>
+            <a class="social-btn" href="https://wa.me/5522997483251" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/whatsapp.png" alt="">WhatsApp <span>↗</span>
+            </a>
+            <a class="social-btn" href="mailto:gabrielstancf@gmail.com">
+                <img src="./assets/email.png" alt="">E-mail <span>↗</span>
+            </a>
+        </div>
+    </section>
+    </main>
+    <footer><span>GABRIEL SANTANA</span><span>FEITO COM CURIOSIDADE // 2024</span></footer>
+    <script>
+        (function(){
+            const carousel = document.querySelector('.projects-carousel');
+            const profileModal = document.querySelector('#profile-modal');
+            const profileTrigger = document.querySelector('.profile-trigger');
+            const profileClose = document.querySelector('.profile-close');
+            const navigationLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+            const sections = navigationLinks
+                .map((link) => document.querySelector(link.getAttribute('href')))
+                .filter(Boolean);
+
+            const setActiveLink = (sectionId) => {
+                navigationLinks.forEach((link) => {
+                    const isCurrent = link.getAttribute('href') === `#${sectionId}`;
+                    link.classList.toggle('active', isCurrent);
+                    link.setAttribute('aria-current', isCurrent ? 'page' : 'false');
+                });
+            };
+
+            if(sections.length){
+                const sectionObserver = new IntersectionObserver((entries) => {
+                    const visibleSections = entries
+                        .filter((entry) => entry.isIntersecting)
+                        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+                    if(visibleSections[0]) setActiveLink(visibleSections[0].target.id);
+                }, { rootMargin: '-25% 0px -55% 0px', threshold: [0, .25, .5, .75, 1] });
+
+                sections.forEach((section) => sectionObserver.observe(section));
+            }
+
+            document.querySelector('nav')?.addEventListener('click', (event) => {
+                const link = event.target.closest('a[href^="#"]');
+                if(link) setActiveLink(link.getAttribute('href').slice(1));
+            });
+
+            profileTrigger?.addEventListener('click', () => profileModal?.showModal());
+            profileClose?.addEventListener('click', () => profileModal?.close());
+            profileModal?.addEventListener('click', (event) => {
+                if(event.target === profileModal) profileModal.close();
+            });
+            profileModal?.addEventListener('cancel', (event) => {
+                event.preventDefault();
+                profileModal.close();
+            });
+            profileModal?.addEventListener('keydown', (event) => {
+                if(event.key === 'Escape') profileModal.close();
+            });
+
+            if(!carousel) return;
+
+            document.addEventListener('click', (e) => {
+                const anchor = e.target.closest('a[href^="#project-"]');
+                if(!anchor) return;
+                e.preventDefault();
+                const id = anchor.getAttribute('href').slice(1);
+                const target = document.getElementById(id);
+                if(!target) return;
+
+                const carouselRect = carousel.getBoundingClientRect();
+                const targetRect = target.getBoundingClientRect();
+                const left = carousel.scrollLeft + (targetRect.left - carouselRect.left);
+                carousel.scrollTo({ left, behavior: 'smooth' });
+
+                // atualiza a hash sem provocar jump
+                if (history.replaceState) {
+                    history.replaceState(null, '', '#' + id);
+                }
+            }, false);
+        })();
+    </script>
+</body>
+</html>
