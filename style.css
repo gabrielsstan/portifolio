@@ -637,13 +637,15 @@ nav a.active {
     border: 1px solid var(--color-border);
     background: var(--color-surface);
     scroll-snap-align: start;
+    max-height: 70vh;
 }
 
 .project-image {
     position: relative;
-    min-height: 20rem;
+    height: 100%;
     overflow: hidden;
     background: var(--color-surface-dark);
+    width: 30rem;
 }
 
 .project-card img {
@@ -839,10 +841,12 @@ footer {
     .project-card {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        min-height: 40rem;
     }
 
     .project-image {
         min-height: 16rem;
+        width: 100%;
     }
 
     .project-card-content {

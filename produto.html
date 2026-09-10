@@ -2,105 +2,184 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="./quix/logo.png" type="image/x-icon">
-  <title>QUIX</title>
-  <style>
-    img{border-radius:1rem;}
-    :root{--bg:#f7f8fb;--card:#fff;--accent:#4a90e2;--muted:#6b7280}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
-    .wrap{max-width:980px;margin:24px auto;padding:16px}
-    header{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:18px;text-align:center}
-    header img{height:6rem;}
-    h1{margin:0;font-size:18px}
-    p.lead{color:var(--muted);margin:6px 0 18px;font-size:14px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-    .card img{width:100%;border-radius:8px;object-fit:contain;height:200px}
-    .gallery{display:flex;flex-direction:column;gap:12px;margin-top:12px}
-    .gallery img{height:180px;object-fit:contain}
-    .card h3{margin:12px 0 6px;font-size:16px}
-    .card p{margin:0;color:var(--muted);font-size:14px}
-    .cta{display:flex;gap:12px;align-items:center;margin-top:16px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:13px;margin:0 auto;}
-    .video-block{display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;}
-    .video-block iframe{width:100%;height:25rem;border-radius:1rem;}
-    .video-block .mobile-link{display:none;}
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:12px}
-    @media(max-width:599px){
-      .video-block iframe{display:none;}
-      .video-block .mobile-link{display:inline-flex;}
-    }
-    @media(min-width:600px){
-      header{flex-direction:row;text-align:left}
-      header img{height:8rem}
-      h1{font-size:20px}
-      .card img{height:280px}
-      .gallery img{height:200px}
-      .video-block .mobile-link{display:none;}
-    }
-    @media(min-width:900px){
-      .wrap{padding:24px}
-      header img{height:10rem}
-      h1{font-size:22px}
-      .card img{height:320px}
-      .gallery img{height:220px}
-      .hide{display:none;}
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./quix/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="produto.css">
+  <title>QUIX | Sistema de pedidos</title>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <img src="quix/logo.png" alt="logo">
-      <div>
-        <h1>Produto: Sistema de Pedidos na Mesa</h1>
-        <p class="lead">Solução para restaurantes e estabelecimentos — gestão, operação e pedido pelo cliente.</p>
-      </div>
+  <main class="page">
+    <header class="topbar">
+        <span>QUIX</span>
+      <a class="back-link" href="./index.html">Voltar ao portfólio ↗</a>
     </header>
 
-    <aside class="video-block" style="text-align:center;display:flex;flex-direction:column;gap:1rem;margin-bottom:1rem;">
-      <h1>Exemplo de uso do QUIX:</h1>
-      <iframe src="https://www.youtube.com/embed/P9sMJhL8lyw?si=AwuVnOygzVLnXULF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <a class="btn mobile-link" href="https://youtu.be/P9sMJhL8lyw?is=XRER_AZvJzXQr2Y8" target="_blank" rel="noopener noreferrer">Abrir vídeo no YouTube</a>
-    </aside>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span>CASE_001</span> Produto digital / 2024</p>
+        <h1 id="page-title">Pedidos na mesa, <span class="accent">sem ruído.</span></h1>
+        <p class="hero-lead">
+          O QUIX é um sistema de pedidos para restaurantes que conecta gestão,
+          operação e cliente em um fluxo simples e direto.
+        </p>
+      </div>
 
-    <section class="grid">
-      <article class="card">
-        <h3>Gestor</h3>
-        <p>O gestor tem acesso a todas as informações do sistema e pode alterar qualquer dado. Ele toma decisões importantes e alimenta o sistema com informações para operadores e clientes. Ele tem à disposição os relatórios de vendas, produtos, estoque, pedidos e entre outros medidores.</p><br>
-        <img src="quix/gestor.png" alt="Gestor">
-        <img src="quix/gestor2.png" alt="Gestor 2">
-      </article>
-
-      <article class="card">
-        <h3>Balcão (Operador)</h3>
-        <p>A pessoa do balcão opera o fluxo: tem total acesso aos pedidos, pode criar novos, editar pedidos feitos por clientes e finalizar vendas. Seu objetivo é organizar e fazer a ponte entre produção e clientes. Para isso há uma tela especial onde tudo isso pode ser feito sem enrolação.</p><br>
-        <img src="quix/balcao.png" alt="Balcão">
-        <img src="quix/balcao2.png" alt="Balcão 2">
-
-      </article>
-
-      <article class="card">
-        <h3>Cliente</h3>
-        <p>O cliente acessa o catálogo do estabelecimento via QR Code e faz pedidos direto na mesa, sem precisar chamar um atendente. Mais autonomia e agilidade.</p><br>
-        <img src="quix/cliente.png" alt="Cliente">
-      </article>
+      <div class="hero-mark">
+        <img src="quix/logo.png" alt="Marca do QUIX">
+      </div>
     </section>
 
-    <div class="card" style="margin-top:18px;">
-      <h3>Benefícios</h3>
-      <ul style="margin:8px 0 0 18px;color:var(--muted)">
-        <li>Fluxo claro entre gestor, operador e cliente</li>
-        <li>Redução de erros no atendimento</li>
-        <li>Mais rapidez no fechamento de pedidos</li>
-      </ul>
+    <section class="showcase" aria-labelledby="showcase-title">
+      <p class="section-label"><span>01 / Demonstração</span></p>
+      <h2 id="showcase-title">O produto em movimento.</h2>
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/P9sMJhL8lyw?si=AwuVnOygzVLnXULF"
+          title="Demonstração do QUIX"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <a
+          class="video-link"
+          href="https://youtu.be/P9sMJhL8lyw?is=XRER_AZvJzXQr2Y8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir demonstração no YouTube ↗
+        </a>
+      </div>
+    </section>
+
+    <section class="roles" aria-labelledby="roles-title">
+      <p class="section-label"><span>02 / Experiência</span></p>
+      <h2 id="roles-title">Cada tela tem um papel.</h2>
+
+      <div class="role-grid">
+        <article class="role-card">
+          <div class="role-content">
+            <span class="role-number">01 — GESTÃO</span>
+            <h3>Gestor</h3>
+            <p>
+              Centraliza as informações do negócio, acompanha relatórios e
+              atualiza produtos, estoque, pedidos e demais dados da operação.
+            </p>
+          </div>
+          <div class="gallery">
+            <button class="gallery-item" type="button" aria-label="Ampliar tela de gestão do QUIX" data-image="quix/gestor.png" data-caption="Tela de gestão do QUIX">
+              <img src="quix/gestor.png" alt="Tela de gestão do QUIX">
+            </button>
+            <button class="gallery-item" type="button" aria-label="Ampliar relatório do gestor no QUIX" data-image="quix/gestor2.png" data-caption="Relatório do gestor no QUIX">
+              <img src="quix/gestor2.png" alt="Relatório do gestor no QUIX">
+            </button>
+          </div>
+        </article>
+
+        <article class="role-card">
+          <div class="role-content">
+            <span class="role-number">02 — OPERAÇÃO</span>
+            <h3>Balcão</h3>
+            <p>
+              Organiza o fluxo de pedidos, permite criar e editar vendas e faz
+              a ponte entre a produção e os clientes.
+            </p>
+          </div>
+          <div class="gallery">
+            <button class="gallery-item" type="button" aria-label="Ampliar tela do balcão do QUIX" data-image="quix/balcao.png" data-caption="Tela do balcão do QUIX">
+              <img src="quix/balcao.png" alt="Tela do balcão do QUIX">
+            </button>
+            <button class="gallery-item" type="button" aria-label="Ampliar pedidos no balcão do QUIX" data-image="quix/balcao2.png" data-caption="Pedidos no balcão do QUIX">
+              <img src="quix/balcao2.png" alt="Pedidos no balcão do QUIX">
+            </button>
+          </div>
+        </article>
+
+        <article class="role-card">
+          <div class="role-content">
+            <span class="role-number">03 — AUTOATENDIMENTO</span>
+            <h3>Cliente</h3>
+            <p>
+              Acessa o catálogo pelo QR Code e faz o pedido direto da mesa,
+              com mais autonomia e agilidade no atendimento.
+            </p>
+          </div>
+          <div class="gallery">
+            <button class="gallery-item" type="button" aria-label="Ampliar catálogo do cliente no QUIX" data-image="quix/cliente.png" data-caption="Catálogo do cliente no QUIX">
+              <img src="quix/cliente.png" alt="Catálogo do cliente no QUIX">
+            </button>
+            <button class="gallery-item" type="button" aria-label="Ampliar pedido do cliente no QUIX" data-image="quix/cliente2.png" data-caption="Pedido do cliente no QUIX">
+              <img src="quix/cliente2.png" alt="Pedido do cliente no QUIX">
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="benefits" aria-labelledby="benefits-title">
+      <h2 id="benefits-title">Uma operação mais clara.</h2>
+
+      <div class="benefits-content">
+        <ul>
+          <li>Fluxo conectado entre gestor, operador e cliente</li>
+          <li>Menos erros no atendimento e na comunicação</li>
+          <li>Mais rapidez no fechamento dos pedidos</li>
+        </ul>
+
         <div class="cta">
-          <a class="btn" href="./index.html">Retornar para a página principal</a>
+          <a class="button" href="./index.html">
+            Conhecer outros projetos <span>↗</span>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
+    <footer>
+      <span>QUIX / SISTEMA DE PEDIDOS</span>
+      <span>GABRIEL SANTANA // 2024</span>
+    </footer>
+  </main>
+
+  <dialog class="image-modal" aria-labelledby="image-modal-caption">
+    <div class="image-modal-content">
+      <button class="image-modal-close" type="button" aria-label="Fechar imagem ampliada">×</button>
+      <img class="image-modal-preview" src="" alt="">
+      <p id="image-modal-caption" class="image-modal-caption"></p>
+    </div>
+  </dialog>
+
+  <script>
+    const imageModal = document.querySelector('.image-modal');
+    const imagePreview = document.querySelector('.image-modal-preview');
+    const imageCaption = document.querySelector('.image-modal-caption');
+    const closeButton = document.querySelector('.image-modal-close');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    const closeImageModal = () => {
+      imageModal.close();
+      imagePreview.src = '';
+      imagePreview.alt = '';
+      imageCaption.textContent = '';
+    };
+
+    galleryItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        const { image, caption } = item.dataset;
+
+        imagePreview.src = image;
+        imagePreview.alt = caption;
+        imageCaption.textContent = caption;
+        imageModal.showModal();
+      });
+    });
+
+    closeButton.addEventListener('click', closeImageModal);
+    imageModal.addEventListener('click', (event) => {
+      if (event.target === imageModal) closeImageModal();
+    });
+  </script>
 </body>
 </html>
